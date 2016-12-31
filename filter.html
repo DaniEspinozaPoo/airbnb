@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Airbnb</title>
+	<link rel="stylesheet" type="text/css" href="src/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+	<link rel="icon" type="image/ico" href="images/logo_air.png">
+</head>
+<body>
+	<!--Comienzo de Filter-->
+
+	<!--Fechas-->
+	<div class="section row">
+		<div class="col s8 m8">
+			<div class="col s2 m2">
+				<p>Fechas</p>
+			</div><!--/.col-->
+			<div class="col s4 m3">
+				<input type="date" class="datepicker" placeholder="Llegada">
+			</div><!--/.col-->
+			<div class="col s4 m3">
+				<input type="date" class="datepicker" placeholder="Salida">
+			</div><!--/.col-->
+			<div class="col s4 m3"> 
+				<select class="c-hue">
+					<option value="" disabled selected>1 Huésped</option>
+					<option value="">1 Huésped</option>
+					<option value="1">1 adulto</option>
+					<option value="2">0 niños</option>
+					<option value="3">0 bebés</option>
+				</select>
+			</div>			
+		</div><!--./col-->
+	</div><!--/.row-->
+
+	<!--Tipo de habitación-->
+	<div class="line-divider"></div>
+	<div class="section row">
+		<div class="col s8 m8">
+			<div class="col s2 m2">
+				<span>Tipos de habitación
+					<i class="fa fa-question-circle tooltipped" data-position="bottom" data-delay="50" data-tooltip="hola" aria-hidden="true"></i>
+				</span>
+			</div>
+				
+			<div class="col s4 m3">	
+				<form action="#">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<span>Casa entera
+						<input type="checkbox" id="test5"/>
+						<label for="test5"></label>
+					</span>
+				</form>
+			</div>
+			<div class="col s4 m3">
+				<form action="#">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<span>Habitación privada
+						<input type="checkbox" id="test5"/>
+						<label for="test5"></label>
+					</span>
+				</form>
+			</div>
+				
+			<div class="col s4 m3">
+				<form action="#" class="back-fil fil-back">
+					<i class="fa fa-home" aria-hidden="true"></i>
+					<span>Habitación compartida
+						<input type="checkbox" id="test5"/>
+						<label for="test5"></label>
+					</span>
+				</form>
+			</div>
+		</div><!--/.col-->
+	</div><!--/.row-->
+
+	<!--Rango de precios-->
+	<div class="line-divider"></div>
+	<div class="section row">
+		<div class="col s8 m8">
+			<div class="col s2 m2">
+				<p>Rango de precios</p>
+			</div><!--/.col-->
+			<div class="col s9 m9">
+				<div class="inp-fil">
+					<div id="slider"></div>	
+				</div>
+			</div>			
+		</div><!--./col-->
+	</div><!--/.row-->
+
+	<!--Reserva inmediata-->
+	<div class="line-divider"></div>
+	<div class="section row">
+		<div class="col s8 m8">
+			<div class="col s2 m2">
+				<p><i class="fa fa-bolt" aria-hidden="true"></i> Reserva inmediata</p> 
+			</div><!--/.col-->
+			<div class="col s7 m7">
+				<p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
+			</div>
+			<div class="col s3 m3">
+				<div class="switch">
+					<label>
+						Off
+						<input type="checkbox">
+						<span class="lever"></span>
+						On
+					</label>
+				</div>
+			</div>			
+		</div><!--./col-->
+	</div><!--/.row-->
+	
+
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+	<script type="text/javascript" src="src/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="src/js/filter.js"></script>
+</body>
+</html>

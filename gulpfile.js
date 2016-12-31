@@ -14,7 +14,6 @@ gulp.task('script', function(){
 	.pipe(gulp.dest('dist/js'));//para dejarlo en esa carpeta
 });
 
-
 gulp.task('style', function(){
 	//aqui va la tarea
 	gulp.src('src/sass/main.scss')//transformar los sass
@@ -26,16 +25,16 @@ gulp.task('style', function(){
 	//dejar en carpeta
 	.pipe(gulp.dest('dist/css'))
 });
+
 //var notify = require('gulp-')
-
-
-
-
 gulp.task('fonts', function(){
 	gulp.src('src/fonts/*')//toma todo lo que esta dentro
 	.pipe(gulp.dest('dist/fonts'));//deja todo lo que tome
 });
 
-
-
 gulp.task('default',['script','style', 'fonts']);
+
+gulp.task('watch', function (){
+	gulp.watch('src/js/*.js', function(){
+	});
+});	
