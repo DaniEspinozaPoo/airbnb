@@ -7,7 +7,7 @@ $( document ).ready(function() {
     //input select
     $('select').material_select() 
    	//tooltip no funca
-   	$('.tooltipped').tooltip();
+   	$('.tooltipped').tooltip({delay: 50});
 });
 
 //slider function
@@ -27,8 +27,8 @@ function collision($div1, $div2) {
 $('#slider').slider({
 	range: true,
 	min: 0,
-	max: 500,
-	values: [ 75, 300 ],
+	max: 500000,
+	values: [ 6500, 500000 ],
 	slide: function(event, ui) {
 		
 		$('.ui-slider-handle:eq(0) .price-range-min').html('$' + ui.values[ 0 ]);
