@@ -3,7 +3,7 @@ $( document ).ready(function() {
     $('.datepicker').pickadate({
 	    selectMonths: true, 
 	    selectYears: 15
-	  });
+	});
     //input select
     $('select').material_select() 
    	//tooltip no funca
@@ -12,23 +12,22 @@ $( document ).ready(function() {
 
 //slider function
 function collision($div1, $div2) {
-      var x1 = $div1.offset().left;
-      var w1 = 40;
-      var r1 = x1 + w1;
-      var x2 = $div2.offset().left;
-      var w2 = 40;
-      var r2 = x2 + w2;
-        
-      if (r1 < x2 || x1 > r2) return false;
-      return true;
-      
-    }
+	var x1 = $div1.offset().left;
+	var w1 = 40;
+	var r1 = x1 + w1;
+	var x2 = $div2.offset().left;
+	var w2 = 40;
+	var r2 = x2 + w2;
+
+	if (r1 < x2 || x1 > r2) return false;
+	return true;
+}
 //llamado a slider
 $('#slider').slider({
 	range: true,
-	min: 0,
-	max: 500,
-	values: [ 75, 300 ],
+	min: 6500,
+	max: 500000,
+	values: [ 6500, 500000 ],
 	slide: function(event, ui) {
 		
 		$('.ui-slider-handle:eq(0) .price-range-min').html('$' + ui.values[ 0 ]);
