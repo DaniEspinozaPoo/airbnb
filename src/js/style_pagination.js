@@ -163,7 +163,6 @@
             this.$container.on('click', 'li', function() {
                 var requestedPage = self.sanitizePageRequest($(this).data('page'));
                 self.requestPage(requestedPage);
-                debugger;
             });
         },
 
