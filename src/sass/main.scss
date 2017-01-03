@@ -1,3 +1,7 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+@import 'font-awesome.scss';
+@import 'layout/filter.scss';
 @import 'font-awesome.scss';
 @import "layout/header.scss";
 @import "superslides.css";
@@ -12,5 +16,4 @@
 *{
 	font-family: 'Circular';
 }
-
 
