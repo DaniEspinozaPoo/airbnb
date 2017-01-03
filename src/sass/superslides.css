@@ -22,54 +22,34 @@
   margin: 0 auto;
   position: absolute;
   z-index: 3;
-  top: 46%;
+  top: 40%;
   width: 100%;
 }
 .slides-navigation a {
   position: absolute;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   font-size: 30px;
   text-decoration: none;
   background: rgba(0,0,0,0.5);
   color: #fff;
-  padding:10px;
+  padding:8px;
   text-align: center;
   line-height: 40px;
   font-weight: bold;
   border-radius: 50%;
 }
-.slides-navigation a.prev {
-  left: 0;
-}
-.slides-navigation a.next {
-  right: 0;
+
+.slides-navigation a:hover {
+  background: #000;
 }
 
-.slides-pagination {
-  position: absolute;
-  z-index: 3;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
+.slides-navigation a.prev {
+  left: 8px;
 }
-.slides-pagination a {
-  border: 2px solid #fff;
-  border-radius: 15px;
-  width: 10px;
-  height: 10px;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=");
-  margin: 2px;
-  overflow: hidden;
-  text-indent: -100%;
+.slides-navigation a.next {
+  right: 8px;
 }
-.slides-pagination a.current {
-  background: #222;
-}
+
+

@@ -1,0 +1,20 @@
+$gris: #999;
+
+.date-pkr{
+	
+	margin-top: 5em;
+
+	.box {
+	  border: 1px solid $gris;
+	  height: 7em;
+	}
+	.picker__date-display {
+		background-color: #F44336 !important; 
+	}
+	.picker__weekday-display {
+		background-color: #F44336 !important; 
+	}
+	.picker__close, .picker__today {
+		color: #F44336 !important; 
+	}
+}

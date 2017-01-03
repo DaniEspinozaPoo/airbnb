@@ -1,21 +1,16 @@
 @import 'font-awesome.scss';
+@import "layout/header.scss";
+@import "superslides.css";
 @import"layout/section-carrousel.scss";
+@import "layout/date-picker.scss";
+@import "layout/footer.scss";
 
-.logo {
-	width:40px;
-	height:40px;
-	margin-left: 15px;
-	margin-top: 12px;
-	padding: 5px;
+@font-face {
+    font-family: Circular;
+    src: url('../fonts/CircularStd-Bold.otf');
+}
+*{
+	font-family: 'Circular';
 }
 
-.nav-wrapper {
-	background-color: #fff;
-
-}
-nav li a{
-	color:black;
-	font-size: 0.875em;
-	font-weight: 900;
-}
 

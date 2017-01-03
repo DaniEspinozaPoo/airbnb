@@ -19,3 +19,5 @@ $('.owl-nome').owlCarousel({
         }
     }
 })
+
+
