@@ -1,0 +1,278 @@
+/* ---------------------------------------------------------------------- */
+/*  SLIDER
+/* ---------------------------------------------------------------------- */
+
+.main-slider{
+	width:540px;
+	margin:0 10px;
+	height:auto;
+	float:left;
+}
+
+
+.flexslider a:active{
+	.flexslider a:focus  {
+		outline: none;
+	}
+}
+.slides{
+	.flex-control-nav{
+		.flex-direction-nav {
+			margin: 0; 
+			padding: 0; 
+			list-style: none;
+		} 
+
+	}
+}
+
+
+.flexslider {
+	margin: 0; 
+	padding: 0;
+	.slides > li {
+		display: none; 
+		-webkit-backface-visibility: hidden;
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+}
+
+.slides:after {
+	content: "."; 
+	display: block; 
+	clear: both; 
+	visibility: hidden; 
+	line-height: 0;
+	height: 0;} 
+	
+	html[xmlns] .slides {
+		display: block;
+	} 
+	* html .slides {
+		height: 1%;
+	}
+
+
+	.no-js {
+		.slides > li:first-child {
+			display: block;
+		}
+	}
+
+
+	.flexslider {
+		margin: 0 0 0 0; 
+		background: #fff; 
+		width:100%; 
+		position: relative;  
+		zoom: 1;
+		.slides {
+			zoom: 1;
+		}
+
+	}
+
+
+	.flex-direction-nav {
+		*height: 0;
+		a {
+			width: 37px;
+			height: 37px; 
+			margin: -20px 0 0;
+			display: block; 
+			background:url(../../images/slider-nav.png) no-repeat 0 0;
+			position: absolute; top: 50%; 
+			cursor: pointer; 
+			text-indent: -9999px; 
+			opacity: 0; 
+			-webkit-transition: all .3s ease; 
+			background-position:12px 8px;
+		}
+	}
+
+	.flex-direction-nav{
+		.flex-next {
+			background-position: 100% 0; 
+			right: 0px; 
+			background-position:-22px 8px;
+		}
+	} 
+	.flex-direction-nav {
+		.flex-prev {
+			left: 0px;
+			background-position:12px 8px;
+		}
+	}
+	.flexslider:hover {
+		.flex-next {
+			opacity: 0.8; right: 5px;
+		}
+	}
+	.flexslider:hover {
+		.flex-prev {
+			opacity: 0.8; 
+			left: 5px;
+		}
+	}
+	.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+		opacity: 1; 
+		
+
+	}
+	.flex-direction-nav {
+		.flex-disabled {
+			opacity: .3!important; 
+			filter:alpha(opacity=30); 
+			cursor: default;
+		}
+	}
+
+/* Controla Nav */
+.flex-control-nav {
+	width: 100%; 
+	position: absolute; 
+	bottom: -40px;
+	text-align: center;
+
+	li {
+		margin: 0 6px; 
+		display: inline-block; 
+		zoom: 1; 
+		*display: inline;
+		a {
+			width: 11px; 
+			height: 11px; 
+			display: block; 
+			cursor: pointer; 
+			text-indent: -9999px; 
+			-webkit-border-radius: 20px; 
+			-moz-border-radius: 20px; 
+			-o-border-radius: 20px; 
+			border-radius: 20px; 
+			box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+			
+			.flex-active { 
+				background: #000; 
+				cursor: default;
+			}
+		}
+	}
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/*  CAJAS
+/* ---------------------------------------------------------------------- */
+
+.outertight{
+	width:300px;
+	margin-right:20px;
+	float:left;
+	margin-top:10px;
+	position:relative;
+	img{
+		max-width:300px;
+	}
+}
+.outerwide{
+	width:620px;
+	float:left;
+	position:relative;
+}
+li.m-r-no, div.m-r-no{
+	margin-right:0;
+}
+.m-t-no{
+	margin-top:0;
+}
+
+
+.navbar{
+	width:100%;
+	position:absolute;
+	margin:-20px 0 0 0;
+	
+}
+/* ---------------------------------------------------------------------- */
+/*  ESTRELLAS
+/* ---------------------------------------------------------------------- */
+
+@charset "UTF-8";
+.ec-stars-wrapper {
+  /* Espacio entre los inline-block (los hijos, los `a`) */
+  font-size: 0;
+  /* Podríamos quitarlo, pero de esta manera (siempre que no le demos padding), sólo aplicará la regla .ec-stars-wrapper:hover a cuando también se esté haciendo hover a alguna estrella */
+  float: right;
+      margin-left: 37px;
+
+
+  /*
+   * El selector de hijo, es necesario para aumentar la especifidad
+   */
+   a {
+  text-decoration: none;
+  display: inline-block;
+  /* Volver a dar tamaño al texto */
+  font-size: 13px;
+  color: #05aaad;
+  -moz-transition: text-shadow 0.5s ease;
+  -o-transition: text-shadow 0.5s ease;
+  -webkit-transition: text-shadow 0.5s ease;
+  transition: text-shadow 0.5s ease;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+
+}
+}
+
+.ec-stars-wrapper {
+	.ec-stars-wrapper:hover{
+		a {
+  color: #2782e4;
+  text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.3);
+}
+	} 
+}
+.ec-stars-wrapper > a:hover ~ a {
+  color: #888;
+  text-shadow: none;
+}
+.caja_clp{
+	color: #484848 !important;
+	.med_result{
+	fill: currentColor;
+    height: 14px;
+    width: 8px;
+    /* display: block; */
+    margin-left: 14px;
+	}
+	.evalua{
+	font-size: 11px;
+    margin-left: 6px;
+}
+.descr_result{
+	font-weight: 200 !important;
+    font-size: 15px !important;
+}
+
+}
+.heart_result{
+	position: absolute !important;
+    top: 34px!important;
+    right: 6px!important;
+    z-index: 2 !important;
+   
+    i{
+    	 color: #C0B9CE;
+    	     &:hover{
+    	color:#63606C;
+    }
+	}
+
+}
+

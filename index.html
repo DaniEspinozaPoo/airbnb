@@ -4,94 +4,411 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Airbnb</title>
-	 
 	<link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
 	<link rel="icon" type="image/ico" href="images/logo_air.png">
-	
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-</head>
-<body>
-	<header>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Airbnb</title>
+		 
+		<link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
+		
+		<link rel="icon" type="image/ico" href="images/logo_air.png">
+		<!-- Carrousel -->
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css'>
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'>
+		<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css'>
 
-		<div class="navbar-fixed">
+		<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+	</head>
+	<body>
+		<header>
 			<nav>
-	    	<div class="nav-wrapper">
-	      	<a href="#" class="brand-logo"><img class="logo" src="images/logo.png"></a>
-	      	<ul id="nav-mobile" class="right hide-on-med-and-down">
-	        	<li><a href="#">Conviértete en anfitrión</a></li>
-	        	<li><a href="#">Ayuda</a></li>
-	        	<li><a href="#">Regístrate</a></li>
-		        <li><a href="#">Iniciar sesión</a></li>
-	      	</ul>
-	    	</div>
-	  	</nav>
-	  	</div>
-			<div id="slides">
-				<ul class="slides-container">
-					<li><img src="images/posters_sm.jpg"></li>
-					<li><img src="images/experiences-hero-desktop.png"></li>
-					<li><img src="images/places_desktop_lg.png"></li>
-					<li><img src="images/keynote_desktop.jpg"></li>
-				</ul>
-				<nav class="slides-navigation">
-	   			<a href="#" class="next">&#62;</a>
-	   			<a href="#" class="prev">&#60;</a>
-	  		</nav>
-	  	</div>
-		
-			
-
-		<nav>
-    	<div class="nav-wrapper">
-      	<a href="#" class="brand-logo"><img class="logo" src="images/logo.png"></a>
-      	<ul id="nav-mobile" class="right hide-on-med-and-down">
-        	<li><a href="#">Conviértete en anfitrión</a></li>
-        	<li><a href="#">Ayuda</a></li>
-        	<li><a href="#">Regístrate</a></li>
-	        <li><a href="#">Iniciar sesión</a></li>
-      	</ul>
-    	</div>
-  	</nav>
-		<div id="slides">
-			<ul class="slides-container">
-				<li><img src="images/posters_sm.jpg"></li>
-				<li><img src="images/experiences-hero-desktop.png"></li>
-				<li><img src="images/places_desktop_lg.png"></li>
-				<li><img src="images/keynote_desktop.jpg"></li>
-			</ul>
-			<nav class="slides-navigation">
-   			<a href="#" class="next">&#62;</a>
-   			<a href="#" class="prev">&#60;</a>
-  		</nav>
-  	</div>
-
-		
-  </div>
-
-
+		    	<div class="nav-wrapper">
+			      	<a href="#" class="brand-logo"><img class="logo" src="images/logo.png"></a>
+			      	<ul id="nav-mobile" class="right hide-on-med-and-down">
+			        	<li><a href="#">Conviértete en anfitrión</a></li>
+			        	<li><a href="#">Ayuda</a></li>
+			        	<li><a href="#">Regístrate</a></li>
+				        <li><a href="#">Iniciar sesión</a></li>
+			      	</ul>
+		    	</div>
+		  	</nav>
+				<div id="slides">
+					<ul class="slides-container">
+						<li><img src="images/posters_sm.jpg">
+						<div class="texto"><h1>Te espera un mundo de viajes inolvidables.</h1>
+						<span class="texto1">Alojamientos, experiencias y lugares, todo en un sola aplicación</span>
+						<div class="buttom">Descubre las últimas novedades</div>
+						</div>
+						</li>
+						<li><img src="images/experiences-hero-desktop.png">
+						<div class="texto"><h1>Experiencis de Airbnb</h1>
+						<span class="texto1">Conviértete en un maestro del sushi o en una leyenda del surf</span>
+						<div class="buttom">Descubre las últimas novedades</div>
+						</div></li>
+						<li><img class="slider-img-2" src="images/places_desktop_lg.png">
+						<div class="texto"><h1>Lugares de Airbanb</h1>
+						<span class="texto1">Elige una ciudad y descubre todos los rincones junto a expertos en locales como Woody</span>
+						<div class="buttom">Descubre las últimas novedades</div>
+						</div></li>
+						<li><img class="slider-img" src="images/keynote_desktop.jpg">
+						<div class="texto"><h1>En directo desde Los Ángeles</h1>
+						<span class="texto1">Acompaña a Brian Chesky, nuestro director ejecutivo, en la presentación de un nuevo mundo de viajes inolvidables.</span>
+						<div class="buttom1">Ver la presentación</div>
+						</div></li>
+					</ul>
+					<nav class="slides-navigation">
+		   			<a href="#" class="next">&#62;</a>
+		   			<a href="#" class="prev">&#60;</a>
+		  		</nav>
+		  	</div>		
+	 
 	</header>
+	<section class="date-pkr">
+		<!-- id= "date picker" Susana-->
+		<div class="container">
+			<form action="#" class="row">
+				<div class="box col s12 m4">
+					<h6>Dónde</h6>
+					<div class="row">
+						<div class="input-field col s12 m12">
+							<input type="text" id="autocomplete-input" class="autocomplete">
+				          	<label for="autocomplete-input">Destino, ciudad, dirección</label>
+						</div>
+					</div>
+				</div>
 
-</section>
-<section>
-	<!-- id= "date picker" Susana-->
-</section>
 
-<!-- id="carrusel" Experiencias Paty-->
-<section>
-  
-</section>
-<footer>
-	<!-- id="footer" Dayana-->
-</footer>
+				<!-- llegada - salida-->
+				<div class="box col s12 m4">
+					<h6>Cuándo</h6>
+					<div class="row">
+					<!-- llegada-->
+			       	<div class="input-field col s6 valign-wrapper">
+			        	<input type="date" class="datepicker" placeholder="Llegada">
+			          	<label for="salida"></label>
+			        </div>
 
 
 
+
+
+
+					<!--salida-->
+			        <div class="input-field col s6 valign-wrapper">
+			        	<input type="date" class="datepicker" placeholder="Salida">
+			          	<label for="salida"></label>
+			        </div>
+			      </div>
+				</div>
+
+				<!-- huespedes-->
+				<div class="box col s12 m4">
+					<h6>Huéspedes</h6>
+					<div class="row">
+					
+						<div class="input-field col s12 m6">
+						    <select class="icons">
+						      <option value="1" selected>1 Huesped</option>
+						      <option value="2">2 Huespedes</option>
+						      <option value="2">3 Huespedes</option>
+						    </select>
+					  </div>
+			
+						 
+						<!--boton buscar-->
+						<div class="col s12 m6">
+							<a href="direccion de resultados" class="waves-effect red btn-large">Buscar</a>
+						</div>
+
+					</div>
+				</div>
+			</form>
+		</div>
+
+
+	</section>
+	<section class="carrusel">
+	<!-- id="carrusel" Experiencias Paty-->
+	  <div class="owl-nome owl-carousel owl-theme">
+	    <div class="item uno">
+	      <a href="#">
+	        <img src="http://a2.muscache.com/im/pictures/d42b0fbd-7979-41da-b7a3-e60bdab2a2b5.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	          <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/c50328d8-ed99-4017-b05e-5a43b045d69c.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/a06b09a5-b089-41a4-a672-56d927387ef3.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+
+
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/66076f5d-d8ca-4985-93de-fb7697083772.jpg?aki_policy=poster" alt="">
+	      </a>
+	       <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/7a910bfa-4fd0-4405-9d93-aecbf53a5a7d.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/5b05c912-088d-4684-9170-d784232a9ec7.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	</div>	  
+	</section>
+	<section class="carrusel">
+	<!-- id="carrusel" Experiencias Paty-->
+	  <div class="owl-nome owl-carousel owl-theme">
+	    <div class="item uno">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/9c66dcc5-6d39-43b3-82ec-72e9d119f873.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	          <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/7317548c-a0bc-48f4-86a6-27a16dbd9ed1.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/a1e6db4f-5676-4276-8b80-f4b6f6c83502.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/a08cb90c-3514-4a07-94bf-268083f2d68c.jpg?aki_policy=poster" alt="">
+	      </a>
+	       <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/7a910bfa-4fd0-4405-9d93-aecbf53a5a7d.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/5b05c912-088d-4684-9170-d784232a9ec7.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	</div>
+	
+	  
+	</section>
+
+
+<body>
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="src/js/jquery.cycle.all.min.js"></script>
-<script src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.superslides.js"></script>
+<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+<script type="text/javascript" src="src/js/flexslider-min.js"></script>
+<script type="text/javascript" src="src/js/style_result.js"></script>
 <script type="text/javascript" src="dist/js/script.min.js"></script>
 
-</body>
+	<section class="carrusel">
+	<!-- id="carrusel" Experiencias Paty-->
+	  <div class="owl-nome owl-carousel owl-theme">
+	    <div class="item uno">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/181dcc7c-30c3-4a28-8a99-27fe7ae43dcf.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	          <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/7c2e5910-79bf-474c-be1e-ebd4427f45dd.jpg?aki_policy=poster" alt="">
+	      </a>
+
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/04eeb71d-8fbd-4c69-9fbc-78acb5f8f9f1.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+
+
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/a06b09a5-b089-41a4-a672-56d927387ef3.jpg?aki_policy=poster" alt="">
+	      </a>
+	       <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/5b05c912-088d-4684-9170-d784232a9ec7.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	    <div class="item">
+	      <a href="#">
+	        <img src="https://a2.muscache.com/im/pictures/7a910bfa-4fd0-4405-9d93-aecbf53a5a7d.jpg?aki_policy=poster" alt="">
+	      </a>
+	      <p>
+	      <strong>$120.000</strong>
+	      <span>Lorem ipsum dolor sit amet</span>
+	      </p>
+	    </div>
+	</div>	  
+	</section>
+	<footer class="footer">
+	    <hr>
+	    <div class="row container">
+	        <div class="col s3 m3">
+	            <select class="browser-default select-bajar">
+	                <option value="" disabled selected id="idioma">Español</option>
+	                <option value="1" id="moneda">Inglés</option>
+	                <option value="2" id="moneda">Portugués</option>
+	                <option value="3" id="moneda">Alemán</option>
+	            </select>
+	            <select class="browser-default select-baja">
+	                <option value="" disabled selected id="moneda">USD</option>
+	                <option value="1">CLP</option>
+	                <option value="2">BRL</option>
+	                <option value="3">EUR</option>
+	            </select>
+	        </div>
+	          <div class="col s3 m3">
+	              <div class="lista-footer">
+	                    <ul>
+	                        <li><span class="span">Airbnb</span></li>
+	                        <li class="uno"><a href="https://www.airbnb.cl/about/about-us">Acerca de</a></li>
+	                        <li><a href="https://www.airbnb.cl/careers">Empleo</a></li>
+	                        <li><a href="https://press.atairbnb.com/">Prensa</a></li>
+	                        <li><a href="https://www.airbnb.cl/help/topic/250/terms---policies">Políticas</a></li>
+	                        <li><a href="https://www.airbnb.cl/help?from=footer">Ayuda</a></li>
+	                        <li><a href="https://www.airbnb.cl/diversity">Diversidad y sentido de pertenencia</a></li>
+	                    </ul> 
+	                </div>
+	          </div>
+	          <div class="col s3 m3">
+	              <div class="lista-footer">
+	                   <ul>
+	                        <li><span>Descubre Airbnb</span></li>
+	                        <li class="uno"><a href="https://www.airbnb.cl/trust"> Confianza y seguridad</a> </li>
+	                        <li><a href="https://www.airbnb.cl/invite?r=6"> Crédito para viajar</a> </li>
+	                        <li><a href="https://www.airbnbcitizen.com/?utm_source=airbnb&utm_medium=footer&utm_campaign=product"> Airbnb Citizen</a> </li>
+	                        <li><a href="https://www.airbnb.cl/business-travel?s=footer"> Viajes de negocios</a> </li>
+	                        <li><a href="https://www.airbnb.cl/things-to-do"> Guías</a> </li>
+	                   </ul>
+	               </div>
+	          </div>
+	          <div class="col s3 m3">
+	               <div class="lista-footer">
+	                   <ul>
+	                       <li><span>Hospedar</span></li>
+	                        <li class="uno"><a href="https://www.airbnb.cl/host"> Razones para hospedar</a></li>
+	                        <li><a href="https://www.airbnb.cl/hospitality"> Hospitalidad</a></li>
+	                        <li><a href="https://www.airbnb.cl/help/article/1397/responsible-hosting"> Ser un anfitrión responsable</a></li>
+	                   </ul>
+	               </div>
+	          </div>
+	    </div>
+	    <div class="row container">
+	        <hr>
+	       <div class="links-footer">
+	             <div class="col l1">
+	                <img src="images/logo-footer.png">
+	            </div>
+	            <div class="col l2">
+	                <p class="a">© Airbnb, Inc</p>
+	            </div>
+	            <div class="col s12 m6 l4"></div>
+	             <div class="col s12 m6 l4">
+	                <p><a href="https://www.airbnb.cl/terms">Términos y Privacidad</a><a style="padding-left: 28px;
+	                " href="https://www.airbnb.cl/sitemaps">Mapa del sitio</a></p>
+	            </div>
+	            <div class="col l1">
+	                <p class="iconos-redes">
+	                    <a href="https://www.facebook.com/AirbnbLatam"><i class="fa fa-facebook" aria-hidden="true"></i>
+	                    </a>
+	                    <a href="https://twitter.com/airbnb_latam"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	                    <a href="https://www.instagram.com/airbnb/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	                    </p>
+	            </div>
+	       </div>
+	    </div>
+	</footer> <!--fin del footer-->
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+	<script type="text/javascript" src="src/js/jquery.cycle.all.min.js"></script>
+	<script type="text/javascript" src="src/js/jquery.superslides.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js'></script>
+	<script type="text/javascript" src="dist/js/script.min.js"></script>
+	</body>
 </html>

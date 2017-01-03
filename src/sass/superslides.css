@@ -18,12 +18,11 @@
   display: table;
   clear: both;
 }
-
 .slides-navigation {
   margin: 0 auto;
   position: absolute;
   z-index: 3;
-  top: 60%;
+  top: 40%;
   width: 100%;
 }
 .slides-navigation a {

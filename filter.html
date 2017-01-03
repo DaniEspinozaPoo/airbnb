@@ -13,49 +13,178 @@
 	<!--Comienzo de Filter-->
 
 	<!--Fechas-->
-	<div class="section row">
+	<div class="row">
 		<div class="col s8 m8">
-			<div class="col s2 m2">
-				<p>Fechas</p>
-			</div><!--/.col-->
-			<div class="col s4 m3">
-				<input type="date" class="datepicker" placeholder="Llegada">
-			</div><!--/.col-->
-			<div class="col s4 m3">
-				<input type="date" class="datepicker" placeholder="Salida">
-			</div><!--/.col-->
-			<div class="col s4 m3"> 
-				<select class="c-hue">
-					<option value="" disabled selected>1 Huésped</option>
-					<option value="">1 Huésped</option>
-					<option value="1">1 adulto</option>
-					<option value="2">0 niños</option>
-					<option value="3">0 bebés</option>
+			<div class="section row">
+				<div class="col s4 m3">
+					<p>Fechas</p>
+				</div><!--/.col-->
+				<div class="col s4 m3">
+					<input type="date" class="datepicker" placeholder="Llegada">
+				</div><!--/.col-->
+				<div class="col s4 m3">
+					<input type="date" class="datepicker" placeholder="Salida">
+				</div><!--/.col-->
+				<div class="col s4 m3"> 
+					<select class="c-hue">
+						<option value="" disabled selected>1 Huésped</option>
+						<option value="">1 Huésped</option>
+						<option value="1">1 adulto</option>
+						<option value="2">1 niños</option>
+						<option value="3">1 bebés</option>
+					</select>
+				</div>			
+			</div><!--/.row-->
+
+			<!--Tipo de habitación-->
+			<div class="line-divider"></div>
+			<div class="section row">
+				<div class="col s12 m12">
+					<div class="col s2 m2">
+						<span>Tipos de habitación
+							<i class="fa fa-question-circle tooltipped" data-position="bottom" data-delay="50" data-tooltip="hola" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="col s4 m3">	
+						<form action="#">
+							<i class="fa fa-home" aria-hidden="true"></i>
+							<span>Casa entera
+								<input type="checkbox" id="test1"/>
+								<label for="test1"></label>
+							</span>
+						</form>
+					</div>
+					<div class="col s4 m3">
+						<form action="#">
+							<i class="fa fa-home" aria-hidden="true"></i>
+							<span>Habitación privada
+								<input type="checkbox" id="test2"/>
+								<label for="test2"></label>
+							</span>
+						</form>
+					</div>
+
+					<div class="col s4 m3">
+						<form action="#" class="back-fil fil-back">
+							<i class="fa fa-home" aria-hidden="true"></i>
+							<span>Habitación compartida
+								<input type="checkbox" id="test3"/>
+								<label for="test3"></label>
+							</span>
+						</form>
+					</div>
+				</div><!--/.col-->
+			</div><!--/.row-->
+
+			<!--Rango de precios-->
+			<div class="line-divider"></div>
+			<div class="section row">
+				<div class="col s12 m12">
+					<div class="col s2 m2">
+						<p>Rango de precios</p>
+					</div><!--/.col-->
+					<div class="col s9 m9">
+						<div class="inp-fil">
+							<div id="slider"></div>	
+						</div>
+					</div>			
+				</div><!--./col-->
+			</div><!--/.row-->
+
+			<!--Reserva inmediata-->
+			<div class="line-divider"></div>
+			<div class="section row">
+				<div class="col s12 m12">
+					<div class="section row">
+						<div class="col s2 m2">
+							<p><i class="fa fa-bolt" aria-hidden="true"></i> Reserva inmediata</p> 
+						</div><!--/.col-->
+						<div class="col s7 m7">
+							<p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
+						</div>
+						<div class="col s3 m3">
+							<div class="switch">
+								<label>
+									Off
+									<input type="checkbox">
+									<span class="lever"></span>
+									On
+								</label>
+							</div>
+						</div>			
+					</div>
+				</div><!--./col-->
+			</div><!--/.row-->
+		</div>
+		<div class="col s4 m4">
+			<div id="map"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col s8 m8">
+			<div class="col s3 m3">
+				<p class="inputigual">
+					Tamaño
+				</p>
+			</div>
+			<div class=" input-field  col s3 m3">
+				<select>
+					<option value="" disabled selected>Habitaciones</option>
+					<option value="1">1 dormitorio</option>
+					<option value="2">2 dormitorio</option>
+					<option value="3">3 dormitorio</option>
+				</select>
+			</div>
+			<div class=" input-field  col s3 m3">
+				<select>
+					<option value="" disabled selected>Baños</option>
+					<option value="1">1 baño</option>
+					<option value="2">2 baños</option>
+					<option value="3">3 baño</option>
 				</select>
 			</div>			
-		</div><!--./col-->
-	</div><!--/.row-->
-
-	<!--Tipo de habitación-->
-	<div class="line-divider"></div>
-	<div class="section row">
+			<div class=" input-field  col s3 m3">
+				<select>
+					<option value="" disabled selected>Camas</option>
+					<option value="1">1 Cama</option>
+					<option value="2">2 Camas</option>
+					<option value="3">3 Camas</option>
+				</select>
+			</div>	
+		</div>
+		<div class="line-divider">
+			
+		</div>
+		<div class="line-divider">
+			
+		</div>
 		<div class="col s8 m8">
-			<div class="col s2 m2">
-				<span>Tipos de habitación
-					<i class="fa fa-question-circle tooltipped" data-position="bottom" data-delay="50" data-tooltip="hola" aria-hidden="true"></i>
-				</span>
+			<div class="divider"></div>
+			<div class="col s3 m3">
+				<p class="inputigual">
+					Opciones
+				</p>
 			</div>
-				
-			<div class="col s4 m3">	
+			<div class=" input-field  col s3 m3">
 				<form action="#">
 					<i class="fa fa-home" aria-hidden="true"></i>
 					<span>Casa entera
 						<input type="checkbox" id="test1"/>
 						<label for="test1"></label>
 					</span>
+					<p>Quedaté en casa de anfitriones excepcionales!</p>
 				</form>
 			</div>
-			<div class="col s4 m3">
+		</div>
+		<div class="col s8 m8">
+			<div class="divider"></div>
+			<div class="col s3 m3">
+				<p class="inputigual">
+					Servicios
+				</p>
+			</div>
+			<div class=" input-field  col s3 m3">
 				<form action="#">
 					<i class="fa fa-home" aria-hidden="true"></i>
 					<span>Habitación privada
@@ -74,51 +203,321 @@
 					</span>
 				</form>
 			</div>
-		</div><!--/.col-->
-	</div><!--/.row-->
+		</div>
+	</div>
 
-	<!--Rango de precios-->
-	<div class="line-divider"></div>
-	<div class="section row">
-		<div class="col s8 m8">
-			<div class="col s2 m2">
-				<p>Rango de precios</p>
-			</div><!--/.col-->
-			<div class="col s9 m9">
-				<div class="inp-fil">
-					<div id="slider"></div>	
+<!-- DANI -->
+	<!-- Result Filtros -->
+<section id="">
+	<div class="navbar">
+		<a id="next1" class="next" href="#"><span></span></a>   
+		<a id="prev1" class="prev" href="#"><span></span></a>
+	</div>
+	<!-- PREV Y NEXT -->
+
+
+	<!-- PRIMERAS CAJAS -->
+	<div class="row">
+		<!-- FIRST -->
+		<div class="column-two-third">
+			<div class="outertight">
+				<div class="col m4 s12">
+					<div class="heart_result"> 
+					
+						<i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+					
+					</div>
+					<div class="outertight m-r-no">
+						<div class="flexslider">
+
+							<ul class="slides">
+								<li>
+									<img src="images/result_03.jpg" alt=""/>
+								</li>
+								<li>
+									<img src="images/result_02.jpg" alt=""/>
+								</li>
+								<li>
+									<img src="images/result_01.jpg" alt=""/>
+								</li>
+							</ul>
+						</div>
+						<div class="caja_clp">
+							<span class="clp">$43770 CLP</span>
+							
+							<span class="ec-stars-wrapper">
+								<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+								<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+								<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+								<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+								<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+								<span class="evalua">64 evaluaciones</span>
+							</span>
+							<span class="name_lugar">
+							<strong>Stylish City Apartment</strong>
+							</span>
+							<div class="descr_result">
+								<p>Casa/apto.</p>
+							</div>
+						</div>
+
+					</div>
 				</div>
-			</div>			
-		</div><!--./col-->
-	</div><!--/.row-->
-
-	<!--Reserva inmediata-->
-	<div class="line-divider"></div>
-	<div class="section row">
-		<div class="col s8 m8">
-			<div class="col s2 m2">
-				<p><i class="fa fa-bolt" aria-hidden="true"></i> Reserva inmediata</p> 
-			</div><!--/.col-->
-			<div class="col s7 m7">
-				<p>Anuncios que no requieren que el anfitrión acepte la solicitud.</p>
 			</div>
-			<div class="col s3 m3">
-				<div class="switch">
-					<label>
-						Off
-						<input type="checkbox">
-						<span class="lever"></span>
-						On
-					</label>
+		</div>
+		<div class="column-two-third">
+			<div div class="outertight">
+				<div class="col m4 s12">
+									<div class="heart_result"> 
+						<a href=""><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a>
+					</div>
+					<div class="outertight m-r-no">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="images/result_05.jpg" alt=""/>
+								</li>
+								<li>
+									<img src="images/result_06.jpg" alt=""/>
+								</li>
+								<li>
+									<img src="images/result_07.jpg" alt=""/>
+								</li>
+							</ul>
+						</div>
+						<div class="caja_clp">
+							<span class="clp">$43770 CLP</span>
+							
+							<span class="ec-stars-wrapper">
+								<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+								<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+								<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+								<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+								<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+								<span class="evalua">40 evaluaciones</span>
+							</span>
+							<span class="name_lugar">
+							<strong>Stylish City Apartment</strong>
+							</span>
+							<div class="descr_result">
+								<p>Casa/apto.</p>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>			
-		</div><!--./col-->
-	</div><!--/.row-->
+			</div>
+		</div>
+	</div>
 	
+		<!-- PRIMERAS CAJAS -->
+	<div class="row">
+		<!-- FIRST -->
+		<div class="column-two-third">
+			<div class="outertight">
+				<div class="col m4 s12">
+					<div class="heart_result"> 
+						<i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+					</div>
+					<div class="outertight m-r-no">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="images/result_01.jpg" alt=""/>
+								</li>
+								<li>
+									<img src="images/result_02.jpg" alt=""/>
+								</li>
+								<li>
+									<img src="images/result_03.jpg" alt=""/>
+								</li>
+							</ul>
+						</div>
+						<div class="caja_clp">
+							<span class="clp">$43770 CLP</span>
+							
+							<span class="ec-stars-wrapper">
+								<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+								<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+								<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+								<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+								<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+								<span class="evalua">64 evaluaciones</span>
+							</span>
+							<span class="name_lugar">
+							<strong>Stylish City Apartment</strong>
+							</span>
+							<div class="descr_result">
+								<p>Casa/apto.</p>
+							</div>
+						</div>
+						<div class="column-two-third">
+							<div div class="outertight">
+								<div class="col m4 s12">
+									<div class="heart_result"> 
+									
+										<i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+									
+									</div>
+									<div class="outertight m-r-no">
+										<div class="flexslider">
+											<ul class="slides">
+												<li>
+													<img src="images/result_04.jpg" alt=""/>
+												</li>
+												<li>
+													<img src="images/result_05.jpg" alt=""/>
+												</li>
+												<li>
+													<img src="images/result_06.jpg" alt=""/>
+												</li>
+											</ul>
+										</div>
+										<div class="caja_clp">
+											<span class="clp">$43770 CLP</span>
+											
+											<span class="ec-stars-wrapper">
+												<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+												<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+												<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+												<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+												<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+												<span class="evalua">40 evaluaciones</span>
+											</span>
+											<span class="name_lugar">
+											<strong>Stylish City Apartment</strong>
+											</span>
+											<div class="descr_result">
+												<p>Casa/apto.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- TERCERAS CAJAS -->
+	<!-- PRIMERAS CAJAS -->
+	<div class="row">
+		<!-- FIRST -->
+		<div class="column-two-third">
+			<div class="outertight">
+				<div class="col m4 s12">
+					<div class="heart_result"> 
+					
+						<i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+					
+					</div>
+					<div class="outertight m-r-no">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="images/result_08.jpg" alt=""/>
+								</li>
+								<li>
+									<img src="images/result_02.jpg" alt=""/>
+								</li>
+								<li>
+									<img src="images/result_03.jpg" alt=""/>
+								</li>
+							</ul>
+						</div>
+						<div class="caja_clp">
+							<span class="clp">$43770 CLP</span>
+							
+							<span class="ec-stars-wrapper">
+								<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+								<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+								<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+								<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+								<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+								<span class="evalua">64 evaluaciones</span>
+							</span>
+							<span class="name_lugar">
+							<strong>Stylish City Apartment</strong>
+							</span>
+							<div class="descr_result">
+								<p>Casa/apto.</p>
+							</div>
+						</div>
 
-	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
-	<script type="text/javascript" src="src/jquery-ui/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="src/js/filter.js"></script>
-</body>
-</html>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column-two-third">
+			<div div class="outertight">
+				<div class="col m4 s12">
+					<div class="heart_result"> 
+					
+						<i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+					
+					</div>
+					<div class="outertight m-r-no">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="images/result_05.jpg" alt=""/>
+								</li>
+								<li>
+									<img src="images/result_06.jpg" alt=""/>
+								</li>
+								<li>
+									<img src="images/result_07.jpg" alt=""/>
+								</li>
+							</ul>
+						</div>
+						<div class="caja_clp">
+							<span class="clp">$43770 CLP</span>
+							
+							<span class="ec-stars-wrapper">
+								<a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+								<a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+								<a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+								<a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+								<a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+								<span class="evalua">40 evaluaciones</span>
+							</span>
+							<span class="name_lugar">
+							<strong>Stylish City Apartment</strong>
+							</span>
+							<div class="descr_result">
+								<p>Casa/apto.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
+<section class="result-footer">
+	<div class="row">
+		<div class="col m4 s12">
+			<div class="result_encont">
+				<span>1 -18 de más de 300 alquileres</span>
+			</div>
+			<div class="p_num">
+				<div class="">
+					<div id="pagination-long"></div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section>
+
+
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+		<script type="text/javascript" src="src/jquery-ui/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="src/js/flexslider-min.js"></script>
+		<script type="text/javascript" src="src/js/map.js" ></script>
+		<script type="text/javascript" src="src/js/filter.js"></script>
+		<script type="text/javascript" src="src/js/style_result.js"></script>
+		<script type="text/javascript" src="src/js/style_pagination.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAObVf0jGW6K5euCjoM9unSw5Gjdtlai7o&libraries=places&callback=initMap" async defer></script>
+	</body>
+	</html>

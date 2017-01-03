@@ -12,6 +12,13 @@ p {
     border-top: 1px solid $grayLine;
     width: 61%;
 }
+#map{
+	height:80vh;
+	position: fixed;
+}
+.inputigual{
+
+}
 input[type=text] {
 	@include input-box;
 }
