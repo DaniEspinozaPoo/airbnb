@@ -1,0 +1,97 @@
+//variables footer
+
+$backlight:#767676 ;
+$colorlinks:#008489  ;
+
+footer{
+
+a{
+    color:$backlight;
+
+    &:hover{
+        text-decoration: underline;
+    }
+            
+
+}
+
+    .select-bajar{
+        margin-top:33px;
+    }
+    .select-baja{
+        margin-top:10px;
+    }
+
+    .uno{
+margin-top:10px;
+    }
+    
+    span{
+    font-weight: bold;
+    padding-bottom:5%;
+    color:black;
+    font-size:14px;
+    }
+
+    .span{
+    margin-top:30px;
+    margin-bottom:10px;
+    }
+
+    li{
+    color:#767a82 ;
+    }
+
+
+
+    .lista-footer {
+    padding: 4px;
+    margin-top: 10px;
+    margin-left: 57px;
+
+    }
+
+    .redes-sociales li {
+    color: $backlight;
+    width: 97%;
+    loat:left;
+    }
+
+
+    .links-footer{
+
+        .a{
+            color:$backlight;
+                margin-left: -35px;
+        }
+        a{
+        color:$backlight;
+        }
+
+        img{
+    width: 50px;
+   height: 40px;
+   margin-top: 8px;
+   margin-left: -12px;
+
+        }
+
+        .iconos-redes{
+            margin-left:-32px;
+            display:flex;
+
+            a{
+                margin:0px 12px;
+            }
+
+
+        }
+    }
+
+
+
+}
+
+
+//fin del footer.
+

@@ -1,0 +1,61 @@
+header {
+
+    .slides-container img{
+    	width: 100vw !important;
+    	height: 450px !important;
+    }
+    .slides-container .slider-img{
+    	width:75% !important;
+    }
+    .slides-container .slider-img-2{
+    	width:50% !important;
+    }
+	.logo {
+		width:40px;
+		height:40px;
+		margin-left: 15px;
+		margin-top: 12px;
+		padding: 5px;
+	}
+
+	.nav-wrapper {
+		background-color: #fff;
+
+	}
+	nav li a{
+		color:black;
+		font-size: 0.875em;
+		font-weight: 900;
+	}
+
+	nav, .slides-navigation{
+		background-color:transparent;
+		box-shadow: none;
+
+	}
+
+	.buttom {
+	border:2px solid grey;
+	display:inline-block;
+	border-radius:20px;
+	// height:45px;
+	width:250px;
+	margin-top:15px;
+	padding:10px;
+	}
+
+	h1 {
+		font-weight:900;
+		font-size:40px;
+	}
+	.texto {
+		margin-left:20%;
+	}
+	.texto1 {
+		display:block;
+	}
+	.buttom1 {
+	
+
+	}
+}

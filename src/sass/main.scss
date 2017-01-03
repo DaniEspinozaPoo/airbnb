@@ -1,2 +1,20 @@
+@import 'variables.scss';
+@import 'mixin.scss';
 @import 'layout/result.scss';
 @import 'font-awesome.scss';
+@import 'layout/filter.scss';
+@import 'font-awesome.scss';
+@import "layout/header.scss";
+@import "superslides.css";
+@import"layout/section-carrousel.scss";
+@import "layout/date-picker.scss";
+@import "layout/footer.scss";
+
+@font-face {
+    font-family: Circular;
+    src: url('../fonts/CircularStd-Bold.otf');
+}
+*{
+	font-family: 'Circular';
+}
+

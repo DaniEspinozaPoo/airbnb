@@ -1,0 +1,78 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: $fontGrayO;
+    -webkit-font-smoothing: antialiased;
+}
+p {
+	font-size: $fontSizeP;
+}
+.line-divider {
+    border-top: 1px solid $grayLine;
+    width: 61%;
+}
+#map{
+	height:80vh;
+	position: fixed;
+}
+.inputigual{
+
+}
+input[type=text] {
+	@include input-box;
+}
+.dropdown-content li>a, .dropdown-content li>span {
+	font-size: 1em;
+	}
+.select-wrapper {
+	input.select-dropdown{
+		@include input-box;
+	}
+}
+.c-hue {
+	color: $fontGrayO;
+	font-size: $fontSizeP;
+}
+[type="checkbox"]+label {
+	padding-left: 5px;
+	float: right;
+	display: block;
+}
+.fa-bolt {
+	color: #ffb400;
+}
+.switch label .lever {
+	margin: 21px 16px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+	border: 1px solid $fontGray;
+    background: #fff;
+    border-radius: 10px;
+}
+.ui-widget-header {
+	background: #26a69a;
+    color: $fontGrayO;
+}
+.ui-widget.ui-widget-content{
+	position: relative;
+	top: 25px;
+}
+.value {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	margin: 0 0 0 -20px;
+	width: 40px;
+	text-align: center;
+	display: block;
+	color: $fontGrayO;
+}
+.price-range-both.value {
+	width: 100px;
+	margin: 0 0 0 -50px;
+	top: 26px;
+}
+.price-range-both {
+	display: none; 
+}
