@@ -1,12 +1,20 @@
 $gris: #999;
 
-.date-pkr{
-	
-	margin-top: 5em;
+.date-pkr{	
 
-	.box {
-	  border: 1px solid $gris;
-	  height: 7em;
+	margin-top: 5em;
+		color: $gris;
+	
+		.box {
+		  border: 1px solid #E1E0E0;
+		  border-radius: 2px;
+		  box-shadow: 2px 2px 0 0 #DAD9D9;
+		  height: 7em;
+	}
+
+	input[type="text"] {
+		border:none !important;
+		padding: 2px !important;
 	}
 	.picker__date-display {
 		background-color: #F44336 !important; 
